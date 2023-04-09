@@ -29,7 +29,7 @@ export default function Post({ post }) {
       <div className="mt-9 px-10">
         <hr className=""></hr>
       </div>
-      <div className=" px-10 mt-11">
+      <div className="px-3 mt-11 sm:px-11">
         <div
           className="wordpress-content"
           dangerouslySetInnerHTML={{ __html: content }}

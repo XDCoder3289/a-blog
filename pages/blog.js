@@ -10,12 +10,12 @@ export default function Blog({ posts }) {
       <div className="flex text-left justify-center py-9">
         <h1 className="text-5xl flex text-cyan-500">Blog Posts</h1>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center px-20">
         <ul className="">
           {posts.map((post) => {
             const [formattedDate] = post.date.split("T"); // Extract the date portion
             return (
-              <li key={post.id} className="text-2xl">
+              <li key={post.id} className="text-1xl">
                 <Link href={`/post/${post.slug}`}>{post.title}</Link>
                 {post.categories.nodes.map((category, index) => (
                   <div key={category.name} className="text-xs text-slate-300">
