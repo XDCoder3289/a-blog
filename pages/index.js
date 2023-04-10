@@ -10,14 +10,14 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="px-5 mt-48">
+    <main className="px-5 mt-32">
       <div className="flex justify-center mb-8 ">
         <h1 className="text-3xl font-semibold text-cyan-500">Hey from Sal!</h1>
       </div>
       <div className="flex justify-center text-9xl text-cyan-500">
         <SiProbot />
       </div>
-      <div className="flex justify-center mt-6 mx-10 text-center text-cyan-500">
+      <div className="flex justify-center mt-6 mx-10 sm:mx-96 text-center text-cyan-500">
         <p>
           Welcome to my blog! I love to code, and I hate SEO. Don't know when
           I'll be able to get away from doing it.

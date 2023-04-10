@@ -8,7 +8,7 @@ export default function About() {
       <h1 className="flex justify-center text-4xl text-cyan-500 py-11">
         About Me
       </h1>
-      <div className="px-10">
+      <div className="px-3 mt-11 sm:px-20">
         <p className="mb-5 ">
           Greetings, brave wanderer of the internet! It's your lucky day, for
           you have stumbled upon the digital abode of the one and only Salman!

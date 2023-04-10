@@ -7,15 +7,21 @@ export default function Socials() {
   return (
     <div>
       <ul className="flex justify-center space-x-5 mt-6">
-        <Link href="/">
+        <a
+          href="https://www.linkedin.com/in/muhammad-salman-ahmed/"
+          target="_blank"
+        >
           <FaLinkedinIn />
-        </Link>
-        <Link href="/about">
+        </a>
+        <a href="https://twitter.com/_light_vader" target="_blank">
           <FiTwitter />
-        </Link>
-        <Link href="/">
+        </a>
+        <a
+          href="https://www.instagram.com/conkyyy__/?igshid=Mzc1MmZhNjY%3D"
+          target="_blank"
+        >
           <BsInstagram />
-        </Link>
+        </a>
       </ul>
     </div>
   );

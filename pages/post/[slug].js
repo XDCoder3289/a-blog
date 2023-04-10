@@ -35,7 +35,7 @@ export default function Post({ post }) {
           dangerouslySetInnerHTML={{ __html: content }}
         ></div>
       </div>
-      <div className=" mb-24 mt-11">
+      <div className=" mb-14 mt-11">
         <Navbar />
       </div>
     </div>
