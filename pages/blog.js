@@ -3,10 +3,14 @@ import { getAllPosts } from "@/lib/api";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Socials from "@/components/SocialsIcons";
+import Head from "next/head";
 
 export default function Blog({ posts }) {
   return (
     <div>
+      <Head>
+        <title>Blogs</title>
+      </Head>
       <div className="flex text-left justify-center py-9">
         <h1 className="text-5xl flex text-cyan-500">Blog Posts</h1>
       </div>

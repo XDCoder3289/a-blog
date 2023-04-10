@@ -1,10 +1,14 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Socials from "@/components/SocialsIcons";
+import Head from "next/head";
 
 export default function About() {
   return (
     <div>
+      <Head>
+        <title>About</title>
+      </Head>
       <h1 className="flex justify-center text-4xl text-cyan-500 py-11">
         About Me
       </h1>

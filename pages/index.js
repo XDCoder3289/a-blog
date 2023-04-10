@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className="px-5 mt-32">
+      <Head>
+        <title>Salman's Blog</title>
+      </Head>
       <div className="flex justify-center mb-8 ">
         <h1 className="text-3xl font-semibold text-cyan-500">Hey from Sal!</h1>
       </div>

@@ -1,12 +1,16 @@
 import { getPostBySlug, getAllPosts } from "@/lib/api";
 import Navbar from "@/components/Navbar";
 import Socials from "@/components/SocialsIcons";
+import Head from "next/head";
 
 export default function Post({ post }) {
   const { title, content, date, featuredImage } = post;
 
   return (
     <div className="">
+      <Head>
+        <title>{title}</title>
+      </Head>
       <h1 className="flex justify-center text-5xl py-8 mt-11 text-center text-cyan-500">
         {title}
       </h1>
