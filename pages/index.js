@@ -15,15 +15,17 @@ export default function Home() {
         <title>Salman's Blog</title>
       </Head>
       <div className="flex justify-center mb-8 ">
-        <h1 className="text-3xl font-semibold text-cyan-500">Hey from Sal!</h1>
+        <h1 className="text-3xl font-semibold text-cyan-500">
+          Hey, Sal here...
+        </h1>
       </div>
       <div className="flex justify-center text-9xl text-cyan-500">
         <SiProbot />
       </div>
       <div className="flex justify-center mt-6 mx-10 sm:mx-96 text-center text-cyan-500">
         <p>
-          Welcome to my blog! I love to code, and I hate SEO. Don't know when
-          I'll be able to get away from doing it.
+          Welcome to my blog! I love to code, but I'm a full time SEO. Fingers
+          crossed for what the future holds for me!
         </p>
       </div>
       <div className="">
