@@ -35,7 +35,7 @@ export default function Post({ post }) {
       </div>
       <div className="px-3 mt-11 sm:px-11">
         <div
-          className="wordpress-content"
+          className="wordpress-content font-light"
           dangerouslySetInnerHTML={{ __html: content }}
         ></div>
       </div>
