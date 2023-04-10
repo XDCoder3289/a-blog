@@ -37,3 +37,10 @@ h6 {
 #a {
   color: rgb(6 182 212);
 }
+
+.list-wp ul,
+.list-wp ol {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
