@@ -2,31 +2,34 @@ import { getPostBySlug, getAllPosts } from "@/lib/api";
 import Navbar from "@/components/Navbar";
 import Socials from "@/components/SocialsIcons";
 import Head from "next/head";
+import { getAllPostIds, getPostData } from "@/lib/posts";
 
-export default function Post({ post }) {
-  const { title, content, date, featuredImage } = post;
-
+export default function Post({ postData }) {
   return (
     <div className="">
       <Head>
-        <title>{title}</title>
+        <title>{postData.Title}</title>
+        <style jsx global>{`
+          a {
+            color: #06b6d4;
+          }
+        `}</style>
       </Head>
       <h1 className="flex justify-center text-5xl py-8 mt-11 text-center text-cyan-500">
-        {title}
+        {postData.Title}
       </h1>
       <p className="flex justify-center text-lg mb-9 text-stone-500">
-        Published: {new Date(date).toLocaleDateString()}
+        Published: {postData.Date}
       </p>
       <Socials />
       <div className="mt-9 px-10 py-2">
         <hr className=""></hr>
       </div>
-      {featuredImage && (
+      {postData.Featured_image && (
         <div className="flex justify-center mt-5">
           <img
             className=" bg-cover w-auto h-1/2"
-            src={featuredImage.node.sourceUrl}
-            alt={featuredImage.node.altText || title}
+            src={postData.Featured_image}
           />
         </div>
       )}
@@ -35,8 +38,8 @@ export default function Post({ post }) {
       </div>
       <div className="px-3 mt-11 sm:px-11">
         <div
-          className="wordpress-content font-light list-wp"
-          dangerouslySetInnerHTML={{ __html: content }}
+          className="markdown-content whitespace-pre-line font-light list-wp"
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         ></div>
       </div>
       <div className=" mb-14 mt-11">
@@ -46,25 +49,21 @@ export default function Post({ post }) {
   );
 }
 
-export async function getStaticProps({ params }) {
-  const post = await getPostBySlug(params.slug);
-
+export async function getStaticPaths() {
+  const paths = getAllPostIds();
   return {
-    props: {
-      post,
-    },
-    revalidate: 5,
+    paths,
+    fallback: false,
   };
 }
 
-export async function getStaticPaths() {
-  const posts = await getAllPosts();
-  const paths = posts.map((post) => ({
-    params: { slug: post.slug },
-  }));
+export async function getStaticProps({ params }) {
+  // Add the "await" keyword like this:
+  const postData = await getPostData(params.id);
 
   return {
-    paths,
-    fallback: "blocking",
+    props: {
+      postData,
+    },
   };
 }
