@@ -19,7 +19,6 @@ I also feel like that I need to get more battering from the world, if that makes
 
 Here are some of your frequently asked questions:
 
-<div class=>
 - Do I think that you’re annoying? Well, yes.
 - Do I love you? Loads!
 - Do I care about you? Yes!!
