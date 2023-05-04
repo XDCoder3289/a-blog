@@ -23,7 +23,7 @@ Writing in md isn't as hard as it looked. Everything is the same (kinda), and I 
 
 ## Why Didn't I use Firebase, Supabase etc?
 
-If you want to have sex, do you get fucked by a bull first? Or.... If you want to fight your wife, do you pull out an AK-47? If you said no, then you're a sociopath who needs to suck his dick. Using a database would be overkill for this little project of mine.
+If you want to have sex, do you get fucked by a bull first? Or.... If you want to fight your wife, do you pull out an AK-47? If you said yes, then you're a sociopath who needs to suck his dick. Using a database would be overkill for this little project of mine.
 
 ## What Now?
 
