@@ -1,11 +1,9 @@
-import Image from "next/image";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import { SiProbot } from "react-icons/si";
-import { AiOutlineRobot } from "react-icons/ai";
+
 import Socials from "@/components/SocialsIcons";
-import BiBody from "react-icons/bi";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +19,7 @@ export default function Home() {
         </h1>
       </div>
       <div className="flex justify-center text-9xl text-cyan-500">
-        <BiBody />
+        <SiProbot />
       </div>
       <div className="flex justify-center mt-6 mx-10 sm:mx-96 text-center text-cyan-500">
         <p>
